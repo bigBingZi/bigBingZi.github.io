@@ -247,6 +247,131 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/23/XSS初探/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Moon">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Moon's life">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/23/XSS初探/" itemprop="url">
+                  XSS初探
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-23T23:36:29+08:00">
+                2017-04-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>  <strong>XSS</strong>(Cross-Site Scripting<br>跨站脚本)是一种不安全的脚本，而XSS攻击则是很常见的WEB攻击手段，这几天在看书，也总结了一些XSS攻击与防范。</p>
+</blockquote>
+<h4 id="XSS产生原因：生成HTML过程中，HTML语法中含有特殊意义的字符（元字符）没有被正确处理，结果导致HTML或JavaScript被肆意注入，使原先的HTML结构发生变化。"><a href="#XSS产生原因：生成HTML过程中，HTML语法中含有特殊意义的字符（元字符）没有被正确处理，结果导致HTML或JavaScript被肆意注入，使原先的HTML结构发生变化。" class="headerlink" title="XSS产生原因：生成HTML过程中，HTML语法中含有特殊意义的字符（元字符）没有被正确处理，结果导致HTML或JavaScript被肆意注入，使原先的HTML结构发生变化。"></a>XSS产生原因：生成HTML过程中，HTML语法中含有特殊意义的字符（元字符）没有被正确处理，结果导致HTML或JavaScript被肆意注入，使原先的HTML结构发生变化。</h4><p><strong>XSS分类：</strong><br>反射型XSS：<br>存储型XSS：<br><strong>风险：</strong><br>1.Cookie被窃取<br>2.获得用户权限<br>3.向用户显示伪造的输入表单，窃取用户个人信息<br><strong>具体解决方法：</strong><br>1.元素中转义&lt;和&amp;<br>2.属性值用双引号括起来，并转义&lt;和”和&amp;<br><strong>辅助型对策：</strong><br> 1.输入校验<br>2.给Cookie添加HttpOnly属性<br>3.关闭TRACE方法</p>
+<p>   （未完待续）</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/18/An-Interview/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -405,7 +530,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
